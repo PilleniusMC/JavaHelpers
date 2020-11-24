@@ -13,6 +13,10 @@ public class FloatArray {
 		this.array = array;
 	}
 
+	public FloatArray() {
+		this.array = new float[]{};
+	}
+
 	public float[] getArray() {
 		return this.array.clone();
 	}

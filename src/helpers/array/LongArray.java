@@ -13,6 +13,10 @@ public class LongArray {
 		this.array = array;
 	}
 
+	public LongArray() {
+		this.array = new long[]{};
+	}
+
 	public long[] getArray() {
 		return this.array.clone();
 	}

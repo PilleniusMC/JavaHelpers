@@ -13,6 +13,10 @@ public class DoubleArray {
 		this.array = array;
 	}
 
+	public DoubleArray() {
+		this.array = new double[]{};
+	}
+
 	public double[] getArray() {
 		return this.array.clone();
 	}

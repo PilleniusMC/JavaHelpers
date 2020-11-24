@@ -13,6 +13,10 @@ public class StringArray {
 		this.array = array;
 	}
 
+	public StringArray() {
+		this.array = new String[]{};
+	}
+
 	public String[] getArray() {
 		return this.array.clone();
 	}

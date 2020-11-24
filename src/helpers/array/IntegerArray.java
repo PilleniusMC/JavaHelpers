@@ -13,6 +13,10 @@ public class IntegerArray {
 		this.array = array;
 	}
 
+	public IntegerArray() {
+		this.array = new int[]{};
+	}
+
 	public int[] getArray() {
 		return this.array.clone();
 	}
