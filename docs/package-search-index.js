@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"m":"javahelpers","l":"helpers"},{"m":"javahelpers","l":"helpers.array"}];updateSearchResults();

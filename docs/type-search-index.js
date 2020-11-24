@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes","u":"allclasses-index.html"},{"p":"helpers.array","l":"ArrayMethods"},{"p":"helpers.array","l":"DoubleArray"},{"p":"helpers.array","l":"FloatArray"},{"p":"helpers.array","l":"IntegerArray"},{"p":"helpers.array","l":"LongArray"},{"p":"helpers","l":"Print"},{"p":"helpers.array","l":"StringArray"}];updateSearchResults();
