@@ -1,4 +1,4 @@
-package helpers;
+package helpers.printers;
 
 /**
  * A class with different class methods, to help with printing different
@@ -7,7 +7,7 @@ package helpers;
  * @author Philipp Kumitz
  *
  */
-public abstract class Print {
+public abstract class PrintMethods {
 
 	/**
 	 * Prints the content of an array.
