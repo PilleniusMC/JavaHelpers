@@ -9,7 +9,9 @@ public class PrettyPrinter {
      */
     public static void boxedPrint(int mode, String stringToPrint) {
         char[] borderElements = modeSelector(mode);
-        String fullString = borderElements[2] + String.valueOf(borderElements[0]).repeat(stringToPrint.length()) + borderElements[3];
+        String fullString = borderElements[2] + String.valueOf(borderElements[0]).repeat(stringToPrint.length()) + borderElements[3] +
+                "\n" + borderElements[1] + stringToPrint + borderElements[1] + "\n" +
+                borderElements[4] + String.valueOf(borderElements[0]).repeat(stringToPrint.length()) + borderElements[5];
 
         System.out.println(fullString);
 
