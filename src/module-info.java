@@ -4,8 +4,6 @@
  *
  */
 module javahelpers {
-	exports helpers;
 	exports helpers.printers;
 	exports helpers.array;
-	
 }
