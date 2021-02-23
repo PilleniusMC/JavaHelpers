@@ -92,7 +92,6 @@ public class FloatArray {
 		}
 		this.array = newArray;
 		return poppedElement;
-
 	}
 	
 	/**
