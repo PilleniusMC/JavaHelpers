@@ -17,7 +17,7 @@ public abstract class ArrayMethods {
 	 *                       content
 	 * @return A new array with all elements from the left and right array
 	 */
-	public int[] merge(int[] leftSideArray, int[] rightSideArray) {
+	public static int[] merge(int[] leftSideArray, int[] rightSideArray) {
 		int[] newArray = new int[(leftSideArray.length + rightSideArray.length)];
 		System.arraycopy(leftSideArray, 0, newArray, 0, leftSideArray.length);
 		System.arraycopy(rightSideArray, 0, newArray, leftSideArray.length, rightSideArray.length);
@@ -34,7 +34,7 @@ public abstract class ArrayMethods {
 	 *                       content
 	 * @return A new array with all elements from the left and right array
 	 */
-	public long[] merge(long[] leftSideArray, long[] rightSideArray) {
+	public static long[] merge(long[] leftSideArray, long[] rightSideArray) {
 		long[] newArray = new long[(leftSideArray.length + rightSideArray.length)];
 		System.arraycopy(leftSideArray, 0, newArray, 0, leftSideArray.length);
 		System.arraycopy(rightSideArray, 0, newArray, leftSideArray.length, rightSideArray.length);
@@ -51,7 +51,7 @@ public abstract class ArrayMethods {
 	 *                       content
 	 * @return A new array with all elements from the left and right array
 	 */
-	public float[] merge(float[] leftSideArray, float[] rightSideArray) {
+	public static float[] merge(float[] leftSideArray, float[] rightSideArray) {
 		float[] newArray = new float[(leftSideArray.length + rightSideArray.length)];
 		System.arraycopy(leftSideArray, 0, newArray, 0, leftSideArray.length);
 		System.arraycopy(rightSideArray, 0, newArray, leftSideArray.length, rightSideArray.length);
@@ -68,7 +68,7 @@ public abstract class ArrayMethods {
 	 *                       content
 	 * @return A new array with all elements from the left and right array
 	 */
-	public double[] merge(double[] leftSideArray, double[] rightSideArray) {
+	public static double[] merge(double[] leftSideArray, double[] rightSideArray) {
 		double[] newArray = new double[(leftSideArray.length + rightSideArray.length)];
 		System.arraycopy(leftSideArray, 0, newArray, 0, leftSideArray.length);
 		System.arraycopy(rightSideArray, 0, newArray, leftSideArray.length, rightSideArray.length);
@@ -85,7 +85,7 @@ public abstract class ArrayMethods {
 	 *                       content
 	 * @return A new array with all elements from the left and right array
 	 */
-	public String[] merge(String[] leftSideArray, String[] rightSideArray) {
+	public static String[] merge(String[] leftSideArray, String[] rightSideArray) {
 		String[] newArray = new String[(leftSideArray.length + rightSideArray.length)];
 		System.arraycopy(leftSideArray, 0, newArray, 0, leftSideArray.length);
 		System.arraycopy(rightSideArray, 0, newArray, leftSideArray.length, rightSideArray.length);
@@ -94,13 +94,13 @@ public abstract class ArrayMethods {
 	}
 
 	/**
-	 * A method which adds elements to an array
+	 * A method which adds an element to an array
 	 * 
 	 * @param originalArray   The original array.
 	 * @param elementToAppend The new element, which gets appended
 	 * @return A new array, which has the appended element in it.
 	 */
-	public int[] addElement(int[] originalArray, int elementToAppend) {
+	public static int[] addElement(int[] originalArray, int elementToAppend) {
 		int i;
 		int n = originalArray.length;
 		int[] newArray = new int[n + 1];
@@ -112,13 +112,13 @@ public abstract class ArrayMethods {
 	}
 
 	/**
-	 * A method which adds elements to an array
+	 * A method which adds an element to an array
 	 * 
 	 * @param originalArray   The original array.
 	 * @param elementToAppend The new element, which gets appended
 	 * @return A new array, which has the appended element in it.
 	 */
-	public long[] addElement(long[] originalArray, long elementToAppend) {
+	public static long[] addElement(long[] originalArray, long elementToAppend) {
 		int i;
 		int n = originalArray.length;
 		long[] newArray = new long[n + 1];
@@ -130,13 +130,13 @@ public abstract class ArrayMethods {
 	}
 
 	/**
-	 * A method which adds elements to an array
+	 * A method which adds an element to an array
 	 * 
 	 * @param originalArray   The original array.
 	 * @param elementToAppend The new element, which gets appended
 	 * @return A new array, which has the appended element in it.
 	 */
-	public float[] addElement(float[] originalArray, float elementToAppend) {
+	public static float[] addElement(float[] originalArray, float elementToAppend) {
 		int i;
 		int n = originalArray.length;
 		float[] newArray = new float[n + 1];
@@ -148,13 +148,13 @@ public abstract class ArrayMethods {
 	}
 
 	/**
-	 * A method which adds elements to an array
+	 * A method which adds an element to an array
 	 * 
 	 * @param originalArray   The original array.
 	 * @param elementToAppend The new element, which gets appended
 	 * @return A new array, which has the appended element in it.
 	 */
-	public double[] addElement(double[] originalArray, double elementToAppend) {
+	public static double[] addElement(double[] originalArray, double elementToAppend) {
 		int i;
 		int n = originalArray.length;
 		double[] newArray = new double[n + 1];
@@ -166,13 +166,13 @@ public abstract class ArrayMethods {
 	}
 
 	/**
-	 * A method which adds elements to an array
+	 * A method which adds an element to an array
 	 * 
 	 * @param originalArray   The original array.
 	 * @param elementToAppend The new element, which gets appended
 	 * @return A new array, which has the appended element in it.
 	 */
-	public String[] addElement(String[] originalArray, String elementToAppend) {
+	public static String[] addElement(String[] originalArray, String elementToAppend) {
 		int i;
 		int n = originalArray.length;
 		String[] newArray = new String[n + 1];
@@ -190,7 +190,7 @@ public abstract class ArrayMethods {
 	 * @param array The array from which you want to get the first element
 	 * @return the first element in the array
 	 */
-	public int popLeft(int[] array) {
+	public static int popLeft(int[] array) {
 		int poppedElement = array[0];
 		System.arraycopy(array, 1, array, 0, array.length - 1);
 		array[array.length - 1] = 0;
@@ -205,7 +205,7 @@ public abstract class ArrayMethods {
 	 * @param array The array from which you want to get the first element
 	 * @return the first element in the array
 	 */
-	public long popLeft(long[] array) {
+	public static long popLeft(long[] array) {
 		long poppedElement = array[0];
 		System.arraycopy(array, 1, array, 0, array.length - 1);
 		array[array.length - 1] = 0;
@@ -220,7 +220,7 @@ public abstract class ArrayMethods {
 	 * @param array The array from which you want to get the first element
 	 * @return the first element in the array
 	 */
-	public float popLeft(float[] array) {
+	public static float popLeft(float[] array) {
 		float poppedElement = array[0];
 		System.arraycopy(array, 1, array, 0, array.length - 1);
 		array[array.length - 1] = 0;
@@ -235,7 +235,7 @@ public abstract class ArrayMethods {
 	 * @param array The array from which you want to get the first element
 	 * @return the first element in the array
 	 */
-	public double popLeft(double[] array) {
+	public static double popLeft(double[] array) {
 		double poppedElement = array[0];
 		System.arraycopy(array, 1, array, 0, array.length - 1);
 		array[array.length - 1] = 0;
@@ -250,7 +250,7 @@ public abstract class ArrayMethods {
 	 * @param array The array from which you want to get the first element
 	 * @return the first element in the array
 	 */
-	public String popLeft(String[] array) {
+	public static String popLeft(String[] array) {
 		String poppedElement = array[0];
 		System.arraycopy(array, 1, array, 0, array.length - 1);
 		array[array.length - 1] = null;
