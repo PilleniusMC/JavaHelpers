@@ -8,13 +8,20 @@ package helpers.array;
  */
 public class IntegerArray {
 	private int[] array;
-
-	public IntegerArray(int[] array) {
-		this.array = array;
-	}
+	private int length;
 
 	public IntegerArray() {
 		this.array = new int[]{};
+		this.length = 0;
+	}
+
+	public IntegerArray(int[] array) {
+		this.array = array;
+		this.length = array.length;
+	}
+
+	public int length() {
+		return length;
 	}
 
 	public int[] getArray() {
@@ -31,6 +38,7 @@ public class IntegerArray {
 		int[] newArray = new int[this.array.length - 1];
 		System.arraycopy(this.array, 1, newArray, 0, this.array.length - 1);
 		this.array = newArray;
+		this.length = newArray.length;
 		return poppedElement;
 	}
 	
@@ -46,6 +54,7 @@ public class IntegerArray {
 		int[] newArray = new int[this.array.length - 1];
 		System.arraycopy(this.array, 0, newArray, 0, this.array.length - 1);
 		this.array = newArray;
+		this.length = newArray.length;
 		return poppedElement;
 	}
 
@@ -91,6 +100,7 @@ public class IntegerArray {
 			}
 		}
 		this.array = newArray;
+		this.length = newArray.length;
 		return poppedElement;
 
 	}
@@ -105,6 +115,7 @@ public class IntegerArray {
 		System.arraycopy(this.array, 0, newArray, 0, this.array.length);
 		newArray[newArray.length - 1] = intToAppend;
 		this.array = newArray;
+		this.length = newArray.length;
 	}
 
 }
